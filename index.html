@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeon Wonwoo Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#join">Join Fanclub</a>
+        <a href="#aboutus">About Us</a>
+    </nav>
+</header>
+
+<section id="home" class="section home fade-in">
+    <h1>Welcome to Jeon Wonwoo SEVENTEEN Profile</h1>
+    <p class="subtitle">A special page dedicated to the brilliance and artistry of Jeon Wonwoo.</p>
+    <div class="author">Author: Azzahra NM</div>
+</section>
+
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
+<div class="bg-shape shape3"></div>
+
+<section class="section fade-in">
+    <h2>Biodata Jeon Wonwoo</h2>
+    <div class="bio-box">
+        <img src="image_jww.jpeg" alt="Jeon Wonwoo">
+        <ul class="bio-text">
+            <li><strong>Nama Lengkap:</strong> Jeon Wonwoo</li>
+            <li><strong>Nama Panggung:</strong> Wonwoo</li>
+            <li><strong>Grup:</strong> SEVENTEEN (Hip-Hop Unit)</li>
+            <li><strong>Tanggal Lahir:</strong> 17 Juli 1996</li>
+            <li><strong>Tempat Lahir:</strong> Changwon, Korea Selatan</li>
+            <li><strong>Tinggi:</strong> 182 cm</li>
+            <li><strong>Golongan Darah:</strong> A</li>
+            <li><strong>Posisi:</strong> Rapper, Sub Vocalist</li>
+            <li><strong>Hobi:</strong> Membaca, fotografi, gaming</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section fade-in">
+    <h2>Karya & Lagu Wonwoo</h2>
+    <div class="song-card">
+        <div class="song-item" style="background-image: url('Bittersweet\ -\ Mingyu\ &\ Wonwoo\ &\ LeeHi_\ SVT.jpeg');">
+            <div class="overlay">Bittersweet (feat. Mingyu & Lee Hi)</div>
+        </div>
+        <div class="song-item" style="background-image: url(BeautifulMonster.jpeg);">
+            <div class="overlay">Beautiful Monster</div>
+        </div>
+        <div class="song-item" style="background-image: url('FML\ -\ The\ 10th\ Mini\ Album.jpeg');">
+            <div class="overlay">FML</div>
+        </div>
+        <div class="song-item" style="background-image: url('Dont\ wanna\ cry.jpeg');">
+            <div class="overlay">Don't Wanna Cry</div>
+        </div>
+        <div class="song-item" style="background-image: url('an\ ode\ -\ secondlife.jpeg');">
+            <div class="overlay">Second Life</div>
+        </div>
+        <div class="song-item" style="background-image: url('SECTOR\ 17\ _\ 4TH\ ALBUM\ REPACKAGE\ _\ 1_돌고\ 돌아….jpeg');">
+            <div class="overlay">Cheers</div>
+        </div>
+        <div class="song-item" style="background-image: url('svt\ 4th\ mini\ album\ cover.jpeg');">
+            <div class="overlay">If I</div>
+        </div>
+        <div class="song-item" style="background-image: url('kidult.jpeg');">
+            <div class="overlay">Kidult</div>
+        </div>
+    </div>
+</section>
+
+
+<section id="join" class="section fade-in">
+    <h2>Join Fanclub</h2>
+    <p class="aesthetic-text">Gabung bersama CARAT untuk support karya Wonwoo & SEVENTEEN </p>
+    <a href="#" class="btn">Join Now</a>
+</section>
+
+<section id="aboutus" class="section fade-in">
+    <h2>About Us</h2>
+    <p class="aesthetic-text">Website ini dibuat oleh kami sebagai bentuk cinta & apresiasi terhadap Jeon Wonwoo.</p>
+    <p class="aesthetic-text">Halaman ini diharapkan dapat menjadi tempat untuk mengenang karya, perjalanan, dan pencapaian Wonwoo.</p>
+</section>
+
+<footer>
+    <p>Made with respect for Jeon Wonwoo</p>
+</footer>
+
+<script>
+// fade-in effect on scroll
+const faders = document.querySelectorAll('.fade-in');
+const options = { threshold: 0.2 };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
+
+faders.forEach(fader => { appearOnScroll.observe(fader); });
+</script>
+
+</body>
+</html>
